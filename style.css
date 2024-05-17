@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*, p, h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    padding-top: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 14px #e7e7e7;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+.fadedText{
+    opacity: 0.7;
+}
+
+#form > p.fg{
+    text-align: right;
+}
+
+#form > p.fg > a.fg{
+    color: black;
+    font-size: 0.9rem;
+}
+
+#form h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1rem;
+}
+
+#form .inputBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+#form .inputField, #form .myBtn{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+#form .inputField{
+    background-color: whitesmoke;
+}
+
+#form .myBtn.mainBtn{
+    color: white;
+    background-color: black;
+}
+
+#form .myBtn.oAuthBtn{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1.5px solid rgb(233, 233, 233);
+}
+
+#form .myBtn.oAuthBtn:hover{
+    border-color: rgb(210, 210, 210);
+}
+
+.btnIcon{
+    width: 20px;
+}
+
+.linedTextBox{
+    position: relative;
+}
+
+.linedTextBox > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 547px) {
+    #form .inputBox{
+        display: flex;
+        flex-direction: column;
+    }
+}
